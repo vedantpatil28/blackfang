@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK FANG INTELLIGENCE - We see what they hide. You win.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="brand-logo">⚡</div>
+            <div class="brand-text">
+                <div class="brand-name">BLACK FANG</div>
+                <div class="brand-subtitle">INTELLIGENCE</div>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <a href="#" class="nav-link" data-section="landing">Home</a>
+            <a href="#" class="nav-link" data-section="dashboard">Dashboard</a>
+            <a href="#" class="nav-link" data-section="competitors">Competitors</a>
+            <a href="#" class="nav-link" data-section="reports">Reports</a>
+            <a href="#" class="nav-link" data-section="alerts">Alerts</a>
+            <a href="#" class="nav-link" data-section="settings">Settings</a>
+        </div>
+    </nav>
+
+    <!-- Sidebar (hidden on landing) -->
+    <aside class="sidebar hidden" id="sidebar">
+        <div class="sidebar-menu">
+            <a href="#" class="sidebar-link active" data-section="dashboard">
+                <span class="sidebar-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="competitors">
+                <span class="sidebar-icon">👥</span>
+                <span>Competitors</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="reports">
+                <span class="sidebar-icon">📋</span>
+                <span>Reports</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="alerts">
+                <span class="sidebar-icon">🚨</span>
+                <span>Alerts</span>
+            </a>
+            <a href="#" class="sidebar-link" data-section="settings">
+                <span class="sidebar-icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Landing Page -->
+        <section id="landing" class="section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">We see what they hide.<br>You win.</h1>
+                        <p class="hero-subtitle">Advanced competitive intelligence platform that monitors your competitors 24/7, delivering real-time insights and strategic recommendations.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn--primary btn--lg" id="accessDashboard">Access Dashboard</button>
+                            <a href="#features" class="btn btn--outline btn--lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="section-content" id="features">
+                <div class="container">
+                    <h2 class="section-title">Intelligence That Matters</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">👁️</div>
+                            <h3>Real-Time Monitoring</h3>
+                            <p>Track competitor pricing, promotions, and customer reviews across all channels, 24/7.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🚨</div>
+                            <h3>Threat Alerts</h3>
+                            <p>Get instant notifications when competitors make strategic moves that could impact your business.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Strategic Insights</h3>
+                            <p>Weekly intelligence reports with actionable recommendations from our AI-powered analysis.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Lightning Fast</h3>
+                            <p>React to market changes faster than ever with our real-time data processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Section -->
+            <div class="section-content" id="pricing">
+                <div class="container">
+                    <h2 class="section-title">Choose Your Arsenal</h2>
+                    <div class="pricing-grid" id="pricingGrid">
+                        <!-- Pricing cards will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="section-content" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Ready to Dominate?</h2>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="dashboard-header">
+                <h1>Intelligence Dashboard</h1>
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Competitors Tracked</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Changes This Week</div>
+                    </div>
+                    <div class="stat-card high-threat">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">High Threats</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Threat Alerts -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Threat Alerts</h3>
+                        <span class="alert-count">2 Unread</span>
+                    </div>
+                    <div class="alert-list" id="dashboardAlerts">
+                        <!-- Alerts will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Competitor Overview -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Competitor Overview</h3>
+                    </div>
+                    <div class="competitor-list" id="competitorOverview">
+                        <!-- Competitors will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Activity Timeline -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="activity-timeline" id="activityTimeline">
+                        <!-- Timeline will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Metrics Chart -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Threat Level Trends</h3>
+                    </div>
+                    <div class="chart-container" style="position: relative; height: 300px;">
+                        <canvas id="threatChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitors Section -->
+        <section id="competitors" class="section">
+            <div class="section-header">
+                <h1>Competitor Management</h1>
+                <button class="btn btn--primary" id="addCompetitorBtn">Add Competitor</button>
+            </div>
+
+            <div class="competitors-grid" id="competitorsGrid">
+                <!-- Competitor cards will be populated by JavaScript -->
+            </div>
+
+            <!-- Add Competitor Modal -->
+            <div class="modal hidden" id="addCompetitorModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add New Competitor</h3>
+                        <button class="modal-close" id="closeModal">&times;</button>
+                    </div>
+                    <form class="modal-body" id="addCompetitorForm">
+                        <div class="form-group">
+                            <label class="form-label">Company Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Industry</label>
+                            <select class="form-control" required>
+                                <option value="">Select Industry</option>
+                                <option value="Automotive">Automotive</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Fitness">Fitness</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Retail">Retail</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Website URL</label>
+                            <input type="url" class="form-control" required>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="button" class="btn btn--outline" id="cancelModal">Cancel</button>
+                            <button type="submit" class="btn btn--primary">Add Competitor</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports" class="section">
+            <div class="section-header">
+                <h1>Intelligence Reports</h1>
+                <button class="btn btn--primary" onclick="alert('Export functionality would be implemented in a real application')">Export PDF</button>
+            </div>
+
+            <div class="reports-list" id="reportsList">
+                <!-- Reports will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Alerts Section -->
+        <section id="alerts" class="section">
+            <div class="section-header">
+                <h1>Alert Center</h1>
+                <div class="alert-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="HIGH">High</button>
+                    <button class="filter-btn" data-filter="MEDIUM">Medium</button>
+                    <button class="filter-btn" data-filter="LOW">Low</button>
+                </div>
+            </div>
+
+            <div class="alerts-list" id="alertsList">
+                <!-- Alerts will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <div class="section-header">
+                <h1>Settings & Profile</h1>
+            </div>
+
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <div class="card-header">
+                        <h3>Profile Information</h3>
+                    </div>
+                    <div class="profile-info" id="profileInfo">
+                        <!-- Profile will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header">
+                        <h3>Notification Preferences</h3>
+                    </div>
+                    <div class="notification-settings">
+                        <div class="setting-item">
+                            <label class="setting-label">
+                                <input type="checkbox" checked> Email Alerts
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="setting-label">
+                                <input type="checkbox" checked> High Priority Notifications
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label class="setting-label">
+                                <input type="checkbox"> Weekly Report Summary
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header">
+                        <h3>Subscription Details</h3>
+                    </div>
+                    <div class="subscription-info" id="subscriptionInfo">
+                        <!-- Subscription details will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
